@@ -3,6 +3,7 @@ const { MongoClient } = require('mongodb');
 
 
 
+
 module.exports = {
   getIndex: (req, res) => {
     res.render("index.ejs");
