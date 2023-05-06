@@ -37,9 +37,10 @@
 
 		// Bar.
 			$(
-				'<div id="titleBar">' +
+				'<div id="titleBar" style="text-align:center">' +
 					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + 'Moonlight Meadery' + '</span>' +
+					//'<span class="title">' + 'Moonlight Meadery' + '</span>' +
+					'<img  style="float:center; max-height: 2.5em;" src="/public/images/logoDark.png">' +
 				'</div>'
 			)
 				.appendTo($body);
@@ -65,3 +66,14 @@
 				});
 
 })(jQuery);
+
+
+
+var root = document.documentElement;
+const lists = document.querySelectorAll('.hs'); 
+
+lists.forEach(el => {
+  const listItems = el.querySelectorAll('li');
+  const n = el.children.length;
+  el.style.setProperty('--total', n);
+});

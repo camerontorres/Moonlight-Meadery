@@ -11,8 +11,8 @@ module.exports = {
   getInfo: (req, res) => {
     res.render("info.ejs");
   },
-  getLeftSidebar: (req, res) => {
-    res.render("left-sidebar.ejs");
+  getwhatIsMead: (req, res) => {
+    res.render("whatIsMead.ejs");
   },
   getNoSidebar: (req, res) => {
     res.render("no-sidebar.ejs");
