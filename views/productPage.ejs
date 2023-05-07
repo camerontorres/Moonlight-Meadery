@@ -1,0 +1,55 @@
+<%- include ('partials/header.ejs') %>
+
+			<!-- Main -->
+			<section class="wrapper style1" style="padding-bottom: 2em;">
+				<div class="container">
+					<div class="row gtr-200">
+
+
+
+
+			<section class="col-6 col-6-narrower">
+				<div class="box post">
+					<img class=" " style="max-height: 30em; width: 100%;" src='/<%=product.image%>' alt="" />
+				</section>
+				<section class="col-6 col-6-narrower">
+					<div class="inner">
+						
+						<h3><%=product.name %></h3>
+						<p><%=product.price%></p>
+							<p><%=product.caption%>
+
+
+							 <br>Our mead is so good because we use only the highest quality honey and carefully selected
+							  ingredients to create a well-balanced and complex flavor profile that appeals to a wide range of tastes.
+								The secret to the exceptional taste of our mead lies in the time and care that goes into the brewing process, 
+								from selecting the best honey and ingredients to monitoring the fermentation process and aging the mead to perfection.
+							
+							</p>
+							
+
+						</div>
+						<div>
+							<form>
+								<div class="input-group quantity-selector quantity-selector-sm">
+									<input type="number" id="inputQuantitySelectorSm" class="form-control" aria-live="polite" data-bs-step="counter" name="quantity" title="quantity" value="0" min="0" max="10" step="1" data-bs-round="0" aria-label="Quantity selector">
+									
+									<button type="button" class="btn btn-icon btn-secondary btn-sm">
+										<span>Add to cart</span>
+
+									</button>
+								  </div>
+							</form>
+						</div>
+					</div>
+					<a href="/products"> <i class="arrow arrowLeft"></i><span style="text-align: center;"> Back to our other products</span></a>
+				</section>
+
+
+					
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<%- include ('partials/footer.ejs') %>

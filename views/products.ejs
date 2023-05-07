@@ -1,0 +1,152 @@
+<%- include ('partials/header.ejs') %>
+
+			<!-- Main -->
+			<section id="banner" style="background-image: url('/public/images/honeyCombText.jpg'); height: 13em;">
+					
+				</section>
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+							<header style="text-align: center;">
+								
+								<p>*Selection subject to change seasonally*</p>
+							</header>
+
+								
+									<section class="wrapper style1">
+										<div class="container">
+											<% for (var i = 0; i < products.length; i += 2) { %>
+												<div class="row">
+
+											<%for(var j = i; j < i + 2 && j < products.length; j++) {%>	<!--loops through each item in collection-->
+												
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href='/products/productPage/<%=products[j]._id%>' class="image left"><img src='<%=products[j].image%>' alt="" /></a>
+														<a href='/products/productPage/<%=products[j]._id%>' style="color: black"><div class="inner">
+															<h3><%= products[j].name %> </h3>
+															<p><%= products[j].caption %></p>
+																 <p><%= products[j].price %></p>
+														</div></a>
+													</div>
+												</section>
+											  <%  } %> 
+												</div>
+												<%  } %>
+											<!--<div class="row">
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="/products/productPage/id:6456c226553c049bad72ec16" class="image left"><img src="public/images/WB1.jpg" alt="" /></a>
+														<a href="/products/productPage/id:6456c226553c049bad72ec16" style="color: black"><div class="inner">
+															<h3>Traditional </h3>
+															<p>A classic mead made with honey, water, and yeast.
+																 It has a sweet and floral taste, perfect for any occasion!</p>
+																 <p>$19.99</p>
+														</div></a>
+													</div>
+												</section>
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="#" class="image left"><img src="public/images/wb2.jpg" alt="" /></a>
+														<a href="#" style="color: black"><div class="inner">
+															<h3>Melomel </h3>
+															<p>A fruity mead made with honey and berries. 
+																It has a sweet and refreshing taste!</p>
+																<p>$29.99</p>
+														</div></a>
+													</div>
+												</section>
+											</div>
+											<div class="row">
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="/about" class="image left"><img src="public/images/wb3.jpg" alt="" /></a>
+														<a href="/about" style="color: black"><div class="inner">
+															<h3>Cyser</h3>
+															<p> A mead made with honey and apple juice and cider. 
+																Its has a crisp sparkling apple flavor with a honey finish</p>
+																<p>$29.99</p>
+														</div></a>
+													</div>
+												</section>
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="#" class="image left"><img src="public/images/wb4.jpg" alt="" /></a>
+														<a href="#" style="color: black"><div class="inner">
+															<h3>Braggot</h3>
+															<p>A mead made with honey and malted grains, giving it a beer-like taste.
+																 It has a very dry and unique flavor profile.</p>
+																 <p>$15.99</p>
+														</div></a>
+													</div>
+												</section> -->
+
+												<!-----********BREAK********-->
+											<!--	<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="/whatIsMead" class="image left"><img src="public/images/WB5.jpg" alt="" /></a>
+														<a href="/whatIsMead" style="color: black"><div class="inner">
+															<h3>Pyment </h3>
+															<p> A mead made with honey and grapes, similar to a wine.
+																 It can be dry with a profound fruity flavor.</p>
+																 <p>$19.99</p>
+														</div></a>
+													</div>
+												</section>
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="#" class="image left"><img src="public/images/wb6.jpg" alt="" /></a>
+														<a href="#" style="color: black"><div class="inner">
+															<h3>Metheglin</h3>
+															<p> A spiced mead made with honey, water, and 
+																spices like cinnamon, nutmeg, and cloves!
+																 It has a dry and warm, spicy taste. Perfect for winter!</p>
+																 <p>$29.99</p>
+														</div></a>
+													</div>
+												</section>
+											</div>
+											<div class="row">
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="/about" class="image left"><img src="public/images/wb7.jpg" alt="" /></a>
+														<a href="/about" style="color: black"><div class="inner">
+															<h3>Bochet</h3>
+															<p> A mead made with caramelized honey, giving it a rich,
+																 toffee-like flavor. This is a very dry mead and is 
+																 aged for a rich, complex taste.</p>
+																 <p>$29.99</p>
+														</div></a>
+													</div>
+												</section>
+												<section class="col-6 col-12-narrower">
+													<div class="box post">
+														<a href="#" class="image left"><img src="public/images/wb8.jpg" alt="" /></a>
+														<a href="#" style="color: black"><div class="inner">
+															<h3>Acerglyn </h3>
+															<p>A mead made with honey and maple syrup.
+																 It has a sweet, maple flavor with a hint 
+																 of honey and is often served with pancakes or waffles. Yum!</p>
+																 <p>$24.99</p>
+														</div></a>
+													</div>
+												</section> --->
+												<!---****** BREAK******--> 
+
+												
+											</div>
+										</div>
+									</section>
+								
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<%- include ('partials/footer.ejs') %>
+
+
+			

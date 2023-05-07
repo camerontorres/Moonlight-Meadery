@@ -4,6 +4,13 @@ const { MongoClient } = require('mongodb');
 
 
 
+const { get } = require('jquery');
+
+//const {MongoClient } = require('mongodb')
+const { db } = require('../models/product');
+
+
+
 module.exports = {
   getIndex: (req, res) => {
     res.render("index.ejs");
@@ -17,11 +24,11 @@ module.exports = {
   getNoSidebar: (req, res) => {
     res.render("no-sidebar.ejs");
   },
-  getRightSidebar: (req, res) => {
-    res.render("right-sidebar.ejs");
-  },
-  getTwoSidebar: (req, res) => {
-    res.render("two-sidebar.ejs");
+  
+
+
+  getabout: (req, res) => {
+    res.render("about.ejs");
   },
 
 

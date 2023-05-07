@@ -3460,5 +3460,17 @@ input, select, textarea {
         font-size: 1.5em;
         letter-spacing: -0.025em;
     }
+
+    .arrow {
+        border: solid ;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+
+      .arrowLeft {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
       
       

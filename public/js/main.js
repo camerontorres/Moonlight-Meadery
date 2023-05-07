@@ -45,6 +45,7 @@
 			)
 				.appendTo($body);
 
+				
 		// Panel.
 			$(
 				'<div id="navPanel">' +
@@ -65,7 +66,24 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+				
+			
+
 })(jQuery);
+
+let current = 'current' 
+
+if(window.location.pathname == '/') { document.getElementById('index').classList.add(current)}
+ else if(window.location.pathname == '/whatIsMead'){ document.getElementById('history').classList.add(current)}
+else if(window.location.pathname == '/products'){ document.getElementById('prod').classList.add(current)}
+else if(window.location.pathname == '/about'){ document.getElementById('info').classList.add(current)};
+
+
+
+
+
+    
+
 
 
 
