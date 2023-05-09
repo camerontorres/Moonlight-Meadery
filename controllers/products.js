@@ -12,10 +12,12 @@ app.use(express.static('public'))
 
 
 
+
+
 module.exports = {
   getProducts: async (req, res) => {
     try{
-      const client = await MongoClient.connect('db-string', { useNewUrlParser: true });
+      const client = await MongoClient.connect(process.env.DB_STRING, { useNewUrlParser: true });
       const db = client.db('test')
      const products = await db.collection('products').find().toArray()
       .then(result =>{

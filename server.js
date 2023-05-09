@@ -7,10 +7,15 @@ const MongoStore = require("connect-mongo")(session);
 const methodOverride = require("method-override");
 const flash = require("express-flash");
 
+const path = require('path');
+
 
 const connectDB = require("./config/database");
 const mainRoutes = require("./routes/main");
 const productRoutes = require("./routes/products")
+
+
+
 
 
 
@@ -57,6 +62,13 @@ app.use(flash());
 //Setup Routes For Which The Server Is Listening
 app.use("/", mainRoutes);
 app.use("/products", productRoutes);
+
+app.use(function(req, res, next) {
+  const requestUrl = req.originalUrl;
+  res.status(404).render(path.join(__dirname, 'views', '404.ejs'), { requestUrl: requestUrl });
+});
+
+
 
 
 

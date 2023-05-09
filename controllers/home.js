@@ -21,10 +21,12 @@ module.exports = {
   getwhatIsMead: (req, res) => {
     res.render("whatIsMead.ejs");
   },
-  getNoSidebar: (req, res) => {
-    res.render("no-sidebar.ejs");
+  getsignUp: (req, res) => {
+    res.render("signUp.ejs");
   },
-  
+  getCareers: (req, res) => {
+    res.render("careers.ejs");
+  },
 
 
   getabout: (req, res) => {

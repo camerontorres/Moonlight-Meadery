@@ -76,7 +76,9 @@ let current = 'current'
 if(window.location.pathname == '/') { document.getElementById('index').classList.add(current)}
  else if(window.location.pathname == '/whatIsMead'){ document.getElementById('history').classList.add(current)}
 else if(window.location.pathname == '/products'){ document.getElementById('prod').classList.add(current)}
-else if(window.location.pathname == '/about'){ document.getElementById('info').classList.add(current)};
+else if(window.location.pathname == '/about'){ document.getElementById('info').classList.add(current)}
+else if(window.location.pathname == '/careers'){ document.getElementById('careers').classList.add(current)}
+else if(window.location.pathname == '/signUp'){ document.getElementById('newsletter').classList.add(current)};
 
 
 

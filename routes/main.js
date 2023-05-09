@@ -10,7 +10,10 @@ router.use("/products", productRoutes);
 //Main Routes - simplified for now
 router.get("/", homeController.getIndex);
 router.get("/whatIsMead", homeController.getwhatIsMead);
-router.get("/no-sidebar", homeController.getNoSidebar);
+router.get("/signUp", homeController.getsignUp);
+router.get("/careers", homeController.getCareers);
+
+
 //router.get("/products", homeController.getproducts);
 router.get("/about", homeController.getabout);
 
