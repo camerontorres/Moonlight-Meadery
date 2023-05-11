@@ -12,6 +12,7 @@ router.get("/", homeController.getIndex);
 router.get("/whatIsMead", homeController.getwhatIsMead);
 router.get("/signUp", homeController.getsignUp);
 router.get("/careers", homeController.getCareers);
+router.get("/nature", homeController.getNature);
 
 
 //router.get("/products", homeController.getproducts);

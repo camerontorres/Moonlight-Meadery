@@ -40,7 +40,7 @@
 				'<div id="titleBar" style="text-align:center">' +
 					'<a href="#navPanel" class="toggle"></a>' +
 					//'<span class="title">' + 'Moonlight Meadery' + '</span>' +
-					'<img  style="float:center; max-height: 2.5em;" src="/public/images/logoDark.png">' +
+					'<img  style="float:center; max-height: 2.5em;" src="/public/images/logoClear.png">' +
 				'</div>'
 			)
 				.appendTo($body);

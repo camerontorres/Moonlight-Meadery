@@ -28,6 +28,10 @@ module.exports = {
     res.render("careers.ejs");
   },
 
+  getNature: (req, res) => {
+    res.render("nature.ejs");
+  },
+
 
   getabout: (req, res) => {
     res.render("about.ejs");
