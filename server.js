@@ -21,12 +21,13 @@ const productRoutes = require("./routes/products")
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
+connectDB().then(() => {
 
 // Passport config
 
 
 //Connect To Database
-connectDB();
+
 
 //Using EJS for views
 app.set("view engine", "ejs");
@@ -75,4 +76,11 @@ app.use(function(req, res, next) {
 //Server Running
 app.listen(process.env.PORT, () => {
   console.log("Server is online");
+});
+
+
+}).catch((err) => {
+  // Handle connection error
+  console.error("Error connecting to the database:", err);
+  process.exit(1); // Exit the application with an error code
 });
